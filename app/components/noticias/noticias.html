@@ -1,0 +1,15 @@
+<nave></nave>
+<br>
+<h1 class="padding">Notícias</h1>
+<table class="table">
+    <tr ng-repeat="noticia in notici | limitTo: 5">
+        <td>
+            <div>
+                <h3 class="d-inline">{{noticia.titulo}}</h3>
+                <div class="badge badge-dark"> {{noticia.autor}}</div>
+                <span class="float-right">remover</span>
+            </div>
+            <p class="padding">{{noticia.mensagem}}</p>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,58 @@
+<login></login>
+<hr>
+
+receita
+<table class="table">
+    <tr class="">
+        <td>Nome</td>
+        <td>Valor</td>
+        <td>Repeticoes</td>
+        <td>repetitividade</td>
+        <td>Total</td>
+    </tr>
+    <tr ng-model="lanca" ng-repeat="lancai in lancam | filter:'true'">
+        <td ng-model="lancai.nome">{{lancai.nome}}</td>
+        <td ng-model="lancai.valor">{{lancai.valor}}</td>
+        <td ng-model="lancai.repeticoes">{{lancai.repeticoes}}</td>
+        <td ng-model="lancai.repetitividade">{{lancai.repetitividade}}</td>
+        <td ng-model="lancai.total">{{ soma () }}</td>
+    </tr>
+</table>
+
+Despesas
+<table class=" table">
+    <tr class="">
+        <td>Nome</td>
+        <td>Valor</td>
+        <td>Repeticoes</td>
+        <td>repetitividade</td>
+        <td>Total</td>
+    </tr>
+    <tr ng-model="lanca" ng-repeat="lancai in lancam | filter:'false'">
+        <td ng-model="lancai.nome">{{lancai.nome}}</td>
+        <td ng-model="lancai.valor">{{lancai.valor}}</td>
+        <td ng-model="lancai.repeticoes">{{lancai.repeticoes}}</td>
+        <td ng-model="lancai.repetitividade">{{lancai.repetitividade}}</td>
+        <td ng-model="lancai.total">{{ soma () }}</td>
+    </tr>
+</table>
+
+<br><br>
+
+<div class="margin alert alert-dark">Balanco: {{ getTotal() }}</div>
+<div ng-if="" class="alert alert-secondary margin20 d-inline text-center">
+    <a href="#!/login">Fazer o Login..</a>
+</div>
+<hr>
+<h4 class="margin padding">ULTIMAS NOTICIAS..</h4>
+<table class="table">
+    <tr ng-repeat="noticia in notici | limitTo: 5">
+        <td>
+            <div>
+                <h6 class="d-inline">{{noticia.titulo}}</h6>
+                <div class="badge badge-dark"> {{noticia.autor}}</div>
+            </div>
+            <p class="padding">{{noticia.mensagem}}</p>
+        </td>
+    </tr>
+</table>

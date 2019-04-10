@@ -1,0 +1,17 @@
+<nave></nave>
+<br>
+<h1 class="padding">Lancamentos</h1>
+<span class="badge float-right badge-info">Total: {{ getTotal() }}</span>
+<table class="table">
+    <tr ng-repeat="lancamento in lancam">
+        <td>
+            <div>
+                <h3 class="d-inline">{{lancamento.nome}}</h3>
+                <div class="badge badge-dark" ng-model="lancament">
+                     {{lancamento.valor}}</div>
+                <span class="float-right">remover</span>
+            </div>
+            <p class="padding">{{lancamento.descricao}}</p>
+        </td>
+    </tr>
+</table>

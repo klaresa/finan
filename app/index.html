@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Ola!</title>
+    <link rel="stylesheet" href="lib/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="lib/style.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-messages.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="components/nav/nav.js"></script>
+    <script src="components/login/login.js"></script>
+    <script src="components/noticias/noticias.js"></script>
+    <script src="components/lancamentos/lancamentos.js"></script>
+    <script src="components/lancamentos/lancamentosAPI.js"></script>
+    <script src="components/categories/categories.js"></script>
+    <script src="components/categories/categoriesAPI.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/home/homeAPI.js"></script>
+
+
+
+
+    <script src="repository/requestService/requestServiceUrl.js"></script>
+
+</head>
+
+<body ng-controller="appCtrl" class="bg-light">
+<div>
+
+    <!--Aparece a nav em todas as telas-->
+
+    <!---Aqui aparece os views dependendo da rota #!/qualquercoisa-->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+.list-none{
+    list-style-type: none;
+    margin: 0;
+}
+
+.padding{
+    padding: 10px;
+}
+
+.margin{
+    margin: 5px;
+}
+
+.white{
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff; !important;
+    text-decoration: none; !important;
+}
+
+a:hover{
+    text-decoration: none; !important;
+}
+
+.margin20{
+    margin-left: 20px;
+}
+
+.padding25 {
+    padding: 25px;
+}

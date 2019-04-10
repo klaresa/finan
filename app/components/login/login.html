@@ -1,0 +1,22 @@
+
+<nave></nave>
+<div class="container-fluid">
+    <form name="formu">
+        <br>
+        <h2>Entrar</h2>
+        <label for="usu"></label>
+        <input class="form-control" id="usu" ng-model="usu" name="usuario" placeholder="Usuario: test" required/>
+        <label for="pass"></label>
+        <input class="form-control" id="pass" ng-model="pass" name="pass" placeholder="Senha: test" required/>
+        <br>
+        <button class="btn btn-dark" ng-model="login" ng-click="entrar(info)">Entrar</button>
+        <br><br>
+        <div class="text-muted" ng-if="!usuario" ng-messages="formu.usuario.$error" role="alert">
+            <div ng-message="required">Preencha o campo de usuario.</div>
+        </div>
+        <div class="text-muted" ng-if="!pass" ng-messages="formu.pass.$error" role="alert">
+            <div ng-message="required">Coloque a senha.</div>
+        </div>
+    </form>
+
+</div>

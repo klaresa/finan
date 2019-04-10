@@ -1,0 +1,16 @@
+<nave></nave>
+<br>
+<h1 class="padding">Categorias</h1>
+<table class="table">
+    <tr ng-repeat="cate in categ">
+        <td>
+            <div>
+
+                <h3 class="d-inline">{{cate.nome}}</h3>
+
+                <div class="float-right">Remover</div>
+            </div>
+            <p class="padding">{{cate.descricao}}</p>
+        </td>
+    </tr>
+</table>
