@@ -7,19 +7,17 @@ angular.module('app')
 
         // controlador do noticiasAPI que serve ao
 
-        controller: function ($scope, $http, requestServiceUrl) {
+        controller: function ($scope, $http, getNotiAPI) {
 
-            //let noticias = requestServiceUrl.getNoticias();
-            //console.log(noticias);
-            //$scope.clicke = function (noticia) {
-            //    alert(requestServiceUrl.getNoticias());
-            //}
-            (function () {
-                requestServiceUrl.getNoti().then(function (response) {
-                    $scope.notici = response.data.noticias;
-                }).catch(function (erro) {
-                    console.log("socorro: ", erro.statusText)
-                })
-            }())
-        },
+            getNotiAPI.getNoticias().then((noti) => {
+                $scope.notici = noti;
+                console.log("1",noti);
+                $scope.$apply();
+            });
+
+            $scope.oioi = function () {
+                console.log("oioi");
+            }
+
+        }
     });

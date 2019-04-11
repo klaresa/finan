@@ -1,4 +1,4 @@
 
-app.controller("appCtrl", function ($route, requestServiceUrl, lancamentosAPI, categoriesAPI) {
+app.controller("appCtrl", function ($route, getLanceAPI, getCategAPI, getNotiAPI) {
 
 });

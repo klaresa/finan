@@ -1,34 +1,34 @@
 
 angular.module("app").service("requestServiceUrl", function ($http) {
 
-    this.getNoticias = function () {
-        return new Promise(function (resolve, reject) {
-            $http.get("repository/dados/noticias").then((response) => {
-                resolve(response.data);
-            }).catch((error) => {
-                reject(error)
-            });
-        })
-    };
-    this.getLancamentos = function () {
-        return new Promise(function (resolve, reject) {
-            $http.get("repository/dados/lancamentos.json").then((response) => {
-                console.log(response.data);
-                resolve(response.data)
-            }).catch((error) => {
-                reject(error)
-            });
-        })
-    };
-    this.getCategorias = function () {
-        return new Promise(function (resolve, reject) {
-            $http.get("repository/dados/categories.json").then((response) => {
-                resolve(response.data)
-            }).catch((error) => {
-                reject(error)
-            });
-        })
-    };
+    // this.getNoticias = function () {
+    //     return new Promise(function (resolve, reject) {
+    //         $http.get("repository/dados/noticias").then((response) => {
+    //             resolve(response.data);
+    //         }).catch((error) => {
+    //             reject(error)
+    //         });
+    //     })
+    // };
+    // this.getLancamentos = function () {
+    //     return new Promise(function (resolve, reject) {
+    //         $http.get("repository/dados/lancamentos.json").then((response) => {
+    //             console.log(response.data);
+    //             resolve(response.data)
+    //         }).catch((error) => {
+    //             reject(error)
+    //         });
+    //     })
+    // };
+    // this.getCategorias = function () {
+    //     return new Promise(function (resolve, reject) {
+    //         $http.get("repository/dados/categories.json").then((response) => {
+    //             resolve(response.data)
+    //         }).catch((error) => {
+    //             reject(error)
+    //         });
+    //     })
+    // };
 
 // noticias
     let _noti = function () {

@@ -8,15 +8,13 @@ angular.module('app')
 
         // controlador do noticiasAPI que serve ao
 
-        controller: function ($scope, categoriesAPI) {
+        controller: function ($scope, getCategAPI) {
 
-            (function () {
-                categoriesAPI.getCate().then(function (response) {
-                    $scope.categ = response.data.categories;
-                }).catch(function (erro) {
-                    console.log("socorro: ", erro.statusText)
-                })
+            getCategAPI.getCategories().then((cate) => {
+                $scope.categ = cate;
+                console.log("1",cate);
+                $scope.$apply();
 
-            }());
+            });
         }
     });
