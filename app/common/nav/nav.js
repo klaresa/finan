@@ -1,7 +1,7 @@
 
 angular.module('app')
     .component('nave', {
-        templateUrl: 'components/nav/nav.html',
+        templateUrl: 'common/nav/nav.html',
         bindings: {
             nave: '=' //two-way data binding
         },

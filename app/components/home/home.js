@@ -6,7 +6,7 @@ angular.module('app')
             home: '=' //two-way data binding
         },
 
-        // controlador do noticiasAPI que serve ao
+        // controlador do home
 
         controller: function ($scope, $http, $location, getLanceAPI, getNotiAPI) {
 

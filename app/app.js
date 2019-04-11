@@ -13,9 +13,7 @@ app.config(function ($routeProvider) {
             template: `<nave></nave><div class="padding">Logado.`,
         })
         .when('/invalid', {
-            template: `<div class="padding">Esse usuario nao existe. 
-                        <br>
-                        <a class="btn btn-danger" href="#!/login">Entrar</a></div>`,
+            templateUrl: 'common/invalid/invalid.html',
         })
         .when('/noticias', {
             template: "<noticias></noticias>",
